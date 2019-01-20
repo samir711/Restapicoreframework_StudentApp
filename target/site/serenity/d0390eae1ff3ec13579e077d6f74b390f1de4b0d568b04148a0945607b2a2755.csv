@@ -1,3 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"First serenity test","Error test","ERROR","2019-01-17T22:25:29.699+05:30","0.0","0.12"
-"First serenity test","This is failing test","FAILURE","2019-01-17T22:25:32.854+05:30","0.0","0.08"

@@ -36,15 +36,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.2],
+                ['Passing', 0],
                 
-                ['Pending', 0.2],
-                ['Pending (manual)', 0.2],
+                ['Pending', 0],
+                
                 ['Ignored', 0],
-                ['Ignored (manual)', 0],
-                ['Failing', 0.2],
                 
-                ['Errors',  0.2]
+                ['Failing', 0],
+                
+                ['Errors',  0]
             ]
         ], {
 
@@ -52,7 +52,7 @@
             seriesColors: ['#30cb23',
                 
                 '#a2f2f2',
-                '#8bb1df',
+                
                 '#eeeadd',
                 
                 '#f8001f',
@@ -73,26 +73,25 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 / 5 tests passed' },
-                {label: '1 / 5 tests pending'},
-                {label: '1 / 5 manual tests pending' },
-                {label: '0 / 5 tests not executed'},
-                {label: '1 / 5 tests failed'},
-                {label: '1 / 5 errors'}
+                {label: '0 / 0 tests passed' },
+                {label: '0 / 0 tests pending'},
+                {label: '0 / 0 tests not executed'},
+                {label: '0 / 0 tests failed'},
+                {label: '0 / 0 errors'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.2],
+                ['Passing', 0],
                 
-                ['Pending', 0.2],
-                ['Pending (manual)', 0.2],
+                ['Pending', 0],
+                
                 ['Ignored', 0],
                 
-                ['Failing', 0.2],
+                ['Failing', 0],
                 
-                ['Errors', 0.2]
+                ['Errors', 0]
             ]
         ], {
 
@@ -100,7 +99,7 @@
             seriesColors: ['#30cb23',
                 
                 '#a2f2f2',
-                '#8be1df',
+                
                 '#eeeadd',
                 
                 '#f8001f',
@@ -122,12 +121,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 / 5 tests passed (0.2% of all test steps)' },
-                {label: '1 / 5 tests pending'},
-                {label: '1 / 5 manual tests pending' },
-                {label: '0 / 5 tests not executed'},
-                {label: '1 / 5 tests failed (0.2% of all test steps)'},
-                {label: '1 / 5 errors (0.2% of all test steps)'}
+                {label: '0 / 0 tests passed (0% of all test steps)' },
+                {label: '0 / 0 tests pending'},
+                {label: '0 / 0 tests not executed'},
+                {label: '0 / 0 tests failed (0% of all test steps)'},
+                {label: '0 / 0 errors (0% of all test steps)'}
             ]
         });
 
@@ -162,7 +160,7 @@
     <div id="topbanner">
         <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
-            <span class="projectname"></span>
+            <span class="projectname">StudentApp</span>
         </div>
     </div>
 </div>
@@ -188,7 +186,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-01-2019 22:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-01-2019 11:13</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
