@@ -1,0 +1,6 @@
+mvn test -Dserenity.outputDirectory=D:/IntelliJJavaProject/StudentApp/target/site/serenity serenity:aggregate
+
+Just call serenity:aggregate after your build is done, e.g.:
+
+mvn serenity:aggregate -Dserenity.outputDirectory=D:/IntelliJJavaProject/StudentApp/target/site/serenity
+
