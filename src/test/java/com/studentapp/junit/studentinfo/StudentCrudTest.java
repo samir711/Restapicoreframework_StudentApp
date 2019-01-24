@@ -5,7 +5,6 @@ import com.studentapp.model.StudentClass;
 import com.studentapp.testbase.BaseTest;
 import com.studentapp.utils.TestUtils;
 import io.restassured.http.ContentType;
-import io.restassured.response.ValidatableResponse;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Steps;
@@ -14,6 +13,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -77,36 +77,23 @@ public class StudentCrudTest extends BaseTest {
     public void test003() {
 
         firstName = firstName + "Updated";
-        StudentClass stu = new StudentClass();
-        stu.setFirstName(firstName);
-        stu.setLastName(lastName);
-        stu.setEmail(email);
-        stu.setProgramme("CSE");
 
         ArrayList<String> courses = new ArrayList<String>();
         courses.add("Java");
-        stu.setCourses(courses);
-        SerenityRest.given().contentType(ContentType.JSON).log().all().body(stu).put("/"+student_Id).then()
-                .log().all();
-
-
-        String p1 = "findAll{it.firstName=='";
-        String p2 = "'}.get(0)";
-        System.out.println(p1+firstName+p2);
-
-        HashMap<String,Object> value=   given().contentType(ContentType.JSON).log().all().get("/list").then()
-                .extract().path(p1+firstName + p2);
+        int studentId;
+        studentId = (((Integer) student_Id).intValue());
+        steps.updateStudent(studentId,firstName,lastName,email,programme,courses);
+        HashMap<String,Object> value=  steps.GetStudentInfoByFirstName(firstName);
         System.out.println(value);
         assertThat(value.values(), hasItem(firstName));
     }
 
     @Title("This test will delete the student and will also verify")
     @Test
-    public void test004() throws InterruptedException {
+    public void test004() {
 
-        SerenityRest.given().contentType(ContentType.JSON).log().all().delete("/"+student_Id);
-        Thread.sleep(2000);
-        SerenityRest.given().contentType(ContentType.JSON).log().all().get("/"+student_Id).then().statusCode(404);
+       steps.deleteStudent((((Integer) student_Id).intValue()));
+       steps.getStudentById((((Integer) student_Id).intValue())).statusCode(404);
         //System.out.println(result);
 
     }
