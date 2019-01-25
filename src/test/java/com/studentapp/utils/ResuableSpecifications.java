@@ -4,6 +4,11 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+
+import java.util.concurrent.TimeUnit;
+
+import static org.hamcrest.Matchers.lessThan;
 
 public class ResuableSpecifications {
 
@@ -11,7 +16,7 @@ public class ResuableSpecifications {
     public static RequestSpecification requestSpecification;
 
     public static ResponseSpecBuilder respec;
-    public static ResponseSpecBuilder responseSpecBuilder;
+    public static ResponseSpecification responseSpecification;
 
     public static RequestSpecification getGenericRequestSpec() {
 
@@ -22,6 +27,17 @@ public class ResuableSpecifications {
 
     }
 
+     public static ResponseSpecification getGenericResponseSpec() {
+
+        respec = new ResponseSpecBuilder();
+        respec.expectHeader("Content-Type", "application/json;charset=UTF-8");
+        respec.expectHeader("Transfer-Encoding","chunked");
+        respec.expectResponseTime(lessThan(10L), TimeUnit.SECONDS);
+         responseSpecification = respec.build();
+         return responseSpecification;
+
+
+     }
 
 
 

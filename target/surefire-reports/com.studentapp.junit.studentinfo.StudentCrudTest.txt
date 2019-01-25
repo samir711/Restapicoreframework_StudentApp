@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.studentapp.junit.studentinfo.StudentCrudTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.233 sec <<< FAILURE! - in com.studentapp.junit.studentinfo.StudentCrudTest
-com.studentapp.junit.studentinfo.StudentCrudTest  Time elapsed: 1.673 sec  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.791 sec <<< FAILURE! - in com.studentapp.junit.studentinfo.StudentCrudTest
+com.studentapp.junit.studentinfo.StudentCrudTest  Time elapsed: 0.32 sec  <<< ERROR!
 net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate configuration report
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
@@ -16,7 +16,7 @@ net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate conf
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@706ddbc8
+Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@13ae0ffd
 	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:223)
 	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
 	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
@@ -50,7 +50,7 @@ Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: freemarker.core._TemplateModelException: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@3564b958"; see cause exception in the Java stack trace.
+Caused by: freemarker.core._TemplateModelException: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@139b16c1"; see cause exception in the Java stack trace.
 
 ----
 FTL stack trace ("~" means nesting-related):
@@ -135,8 +135,7 @@ FTL stack trace ("~" means nesting-related):
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.NullPointerException: null
 	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor202.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)

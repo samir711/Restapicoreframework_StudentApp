@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.studentapp.junit.studentsinfo.StudentCrudTest" time="5.254" tests="5" errors="1" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_181\bin"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Abhinav\Desktop\New folder\StudentApp-1"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_181\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Abhinav\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\Abhinav\Desktop\New folder\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5569142111413448194.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_181\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Parallels\Parallels Tools\Applications;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_181\bin;C:\apache-maven-3.6.0\bin;C:\Users\Abhinav\AppData\Local\Microsoft\WindowsApps;;C:\Users\Abhinav\Desktop\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Abhinav"/>
+    <property name="user.timezone" value="GMT+05:30"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Abhinav"/>
+    <property name="java.class.path" value="/C:/Users/Abhinav/Desktop/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_181"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_181\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_181\lib\resources.jar;C:\Program Files\Java\jre1.8.0_181\lib\rt.jar;C:\Program Files\Java\jre1.8.0_181\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_181\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_181\lib\jce.jar;C:\Program Files\Java\jre1.8.0_181\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_181\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_181\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Abhinav\Desktop\New folder\StudentApp-1\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="test001" classname="com.studentapp.junit.studentsinfo.StudentCrudTest" time="1.217">
+    <failure message="1 expectation failed.&#10;Expected header &quot;Transfer-Encoding&quot; was not &quot;chunkedyuyjff&quot;, was &quot;chunked&quot;. Headers are:&#10;Location=http://localhost:8080/student/101&#10;Content-Type=application/json;charset=UTF-8&#10;Transfer-Encoding=chunked&#10;Date=Thu, 24 Jan 2019 03:27:04 GMT&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected header "Transfer-Encoding" was not "chunkedyuyjff", was "chunked". Headers are:
+Location=http://localhost:8080/student/101
+Content-Type=application/json;charset=UTF-8
+Transfer-Encoding=chunked
+Date=Thu, 24 Jan 2019 03:27:04 GMT
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:88)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:311)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:292)
+	at com.studentapp.junit.studentsinfo.StudentCrudTest.test001(StudentCrudTest.java:58)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/student
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+{
+    "firstName": "TestStudent_89536",
+    "lastName": "TestStudent_89536",
+    "email": "89536xyz@text.com",
+    "programme": "CSE",
+    "courses": [
+        "Java"
+    ]
+}
+HTTP/1.1 201 
+Location: http://localhost:8080/student/101
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 24 Jan 2019 03:27:04 GMT
+
+{
+    "msg": "Student added"
+}
+]]></system-out>
+    <system-err><![CDATA[34996 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Get all students
+----------------------------------------------------------------------------
+35059 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This is a skipped test to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\307047252498f4a697f8f36a1fbdbdc24545b8d86b798682540e20d1876404b4.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\307047252498f4a697f8f36a1fbdbdc24545b8d86b798682540e20d1876404b4.json7164b846-2d65-44d4-820f-1bb019e300c2)
+35062 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This is atest with error to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\425c8b4a3a62848d6ef47d04e40f9ae011346a38a2c2cb1bb78792589ce9d0ce.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\425c8b4a3a62848d6ef47d04e40f9ae011346a38a2c2cb1bb78792589ce9d0ce.jsone68518c8-ef5c-421f-beca-33ceb06a28f1)
+35168 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This is a pending test to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\fafd67ad440ca0e6aa888a71803a0c554f0852090d96724df89c848afb3918bf.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\fafd67ad440ca0e6aa888a71803a0c554f0852090d96724df89c848afb3918bf.json4f18f94d-ba1d-407b-aa69-1ee34e922f2f)
+35175 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This is a manual test to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\9db3fe179b2127edfd2c2e402c5b9bab335dc4ed5ffc539fe83960a91fb476fc.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\9db3fe179b2127edfd2c2e402c5b9bab335dc4ed5ffc539fe83960a91fb476fc.json3b66937f-25b5-4170-8cf8-e29fc021e5a6)
+35186 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This isa failing to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\18e2c4098d3a09b4cc4b8d15ca5612dd0c757d65912dd262736b8994c91ac1fc.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\18e2c4098d3a09b4cc4b8d15ca5612dd0c757d65912dd262736b8994c91ac1fc.jsonfb91691a-f07c-4505-8124-9033564088c0)
+35200 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for File does not exist to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\49cd60b93fde3ff27bf49c003a64853b7539264547eb815dd047eb92baef8e87.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\49cd60b93fde3ff27bf49c003a64853b7539264547eb815dd047eb92baef8e87.json531d4b6b-b86c-4d10-80ab-67da149d6aac)
+35208 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Get all students to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\d52f97208ee58ea4bc3426d0f419b93712b238d2e535aab87ae71149b59e76e7.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\d52f97208ee58ea4bc3426d0f419b93712b238d2e535aab87ae71149b59e76e7.json88ecd618-b0e5-4a57-8c72-443d0912bd38)
+35231 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:thisIsASkippedTest in 307047252498f4a697f8f36a1fbdbdc24545b8d86b798682540e20d1876404b4.html in directory target\site\serenity  
+35233 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:thisIsAtestWithError in 425c8b4a3a62848d6ef47d04e40f9ae011346a38a2c2cb1bb78792589ce9d0ce.html in directory target\site\serenity  
+35356 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:thisIsAPendingTest in fafd67ad440ca0e6aa888a71803a0c554f0852090d96724df89c848afb3918bf.html in directory target\site\serenity  
+35372 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:thisIsAManualTest in 9db3fe179b2127edfd2c2e402c5b9bab335dc4ed5ffc539fe83960a91fb476fc.html in directory target\site\serenity  
+35402 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:thisIsaFailing in 18e2c4098d3a09b4cc4b8d15ca5612dd0c757d65912dd262736b8994c91ac1fc.html in directory target\site\serenity  
+35444 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:fileDoesNotExist in 49cd60b93fde3ff27bf49c003a64853b7539264547eb815dd047eb92baef8e87.html in directory target\site\serenity  
+35476 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR First serenity test:getAllStudents in d52f97208ee58ea4bc3426d0f419b93712b238d2e535aab87ae71149b59e76e7.html in directory target\site\serenity  
+35560 [main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Student crud test
+35562 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test001
+-------------------------------------------------------------------
+35562 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 108
+]]></system-err>
+  </testcase>
+  <testcase name="test002" classname="com.studentapp.junit.studentsinfo.StudentCrudTest" time="1.534"/>
+  <testcase name="test003" classname="com.studentapp.junit.studentsinfo.StudentCrudTest" time="0.483"/>
+  <testcase name="test004" classname="com.studentapp.junit.studentsinfo.StudentCrudTest" time="0.178"/>
+  <testcase name="com.studentapp.junit.studentsinfo.StudentCrudTest" classname="org.apache.maven.surefire.junit4.JUnit4Provider" time="1.842">
+    <error message="Failed to generate configuration report" type="net.thucydides.core.reports.ReportGenerationFailedError">net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate configuration report
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at net.thucydides.core.reports.ReportService.waitForReportGenerationToFinish(ReportService.java:182)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:163)
+	at net.thucydides.core.reports.ReportService.generateReportsFor(ReportService.java:112)
+	at net.serenitybdd.junit.runners.SerenityRunner.generateReportsFor(SerenityRunner.java:410)
+	at net.serenitybdd.junit.runners.SerenityRunner.generateReports(SerenityRunner.java:305)
+	at net.serenitybdd.junit.runners.SerenityRunner.run(SerenityRunner.java:259)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@7b6141f0
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:223)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: Failed to merge template: Failed to process FreeMarker template
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:39)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed to process FreeMarker template
+	at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:45)
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: freemarker.core._TemplateModelException: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@2e17de8b"; see cause exception in the Java stack trace.
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${formatter.renderText(restQuery.resp...  [in template "freemarker/default.ftl" in macro "restQueryData" at line 348, column 41]
+	- Reached through: @restQueryData restQuery=step.restQue...  [in template "freemarker/default.ftl" in macro "step_details" at line 418, column 37]
+	- Reached through: @step_details step=step step_number=s...  [in template "freemarker/default.ftl" in macro "write_step" at line 242, column 17]
+	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
+	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
+----
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:311)
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:275)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:80)
+	at freemarker.core.MethodCall._eval(MethodCall.java:62)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:42)
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException: null
+	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:71)
+	at freemarker.core.MethodCall._eval(MethodCall.java:62)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:42)
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</error>
+    <system-err><![CDATA[39058 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: This test will delete the student and will also verify
+----------------------------------------------------------------------------
+39133 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will create a new Student to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\21d42b99ddd9b8ebcd017ba88e9161124999c37ca7ebf9d5cb48336dd9ccca60.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\21d42b99ddd9b8ebcd017ba88e9161124999c37ca7ebf9d5cb48336dd9ccca60.json8c98cb94-d69b-47b0-86a2-0fc0fe72ac72)
+39140 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will verify newly added student to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\8f2ee0423467242bbb6b5d65df632c1d6db3995f400cd768fbc6dd21aed26ec6.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\8f2ee0423467242bbb6b5d65df632c1d6db3995f400cd768fbc6dd21aed26ec6.json45ea0b90-49e6-444f-99f1-0128e21f3015)
+39193 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will update student information and Verify the info got updated to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\953f72f8663dc0e5780ee74e5df418f4a45072254823639383ab7a29e6624d11.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\953f72f8663dc0e5780ee74e5df418f4a45072254823639383ab7a29e6624d11.json5799807e-48ad-4266-8d03-d656e58ed7e0)
+39197 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will delete the student and will also verify to file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\73641b3794c55a1eea3cf62c8e9e11e8d77048dc86991b8a20d96c8aa39cdb9b.json (using temp file C:\Users\Abhinav\Desktop\New folder\StudentApp-1\target\site\serenity\73641b3794c55a1eea3cf62c8e9e11e8d77048dc86991b8a20d96c8aa39cdb9b.jsonbe612369-f0de-45a6-b7c4-4143d4134b15)
+39274 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test001 in 21d42b99ddd9b8ebcd017ba88e9161124999c37ca7ebf9d5cb48336dd9ccca60.html in directory target\site\serenity  
+39286 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test002 in 8f2ee0423467242bbb6b5d65df632c1d6db3995f400cd768fbc6dd21aed26ec6.html in directory target\site\serenity  
+39667 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test003 in 953f72f8663dc0e5780ee74e5df418f4a45072254823639383ab7a29e6624d11.html in directory target\site\serenity  
+39670 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test004 in 73641b3794c55a1eea3cf62c8e9e11e8d77048dc86991b8a20d96c8aa39cdb9b.html in directory target\site\serenity  
+Jan 24, 2019 8:57:07 AM freemarker.log._JULLoggerFactory$JULLogger error
+SEVERE: Error executing FreeMarker template
+FreeMarker template error:
+Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@2e17de8b"; see cause exception in the Java stack trace.
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${formatter.renderText(restQuery.resp...  [in template "freemarker/default.ftl" in macro "restQueryData" at line 348, column 41]
+	- Reached through: @restQueryData restQuery=step.restQue...  [in template "freemarker/default.ftl" in macro "step_details" at line 418, column 37]
+	- Reached through: @step_details step=step step_number=s...  [in template "freemarker/default.ftl" in macro "write_step" at line 242, column 17]
+	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
+	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._TemplateModelException: [... Exception message was already printed; see it above ...]
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:311)
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:275)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:80)
+	at freemarker.core.MethodCall._eval(MethodCall.java:62)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:42)
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:71)
+	... 70 more
+
+39802 [pool-1-thread-2] WARN net.thucydides.core.reports.templates.FreemarkerReportTemplate - Report generation failed
+FreeMarker template error:
+Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@2e17de8b"; see cause exception in the Java stack trace.
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${formatter.renderText(restQuery.resp...  [in template "freemarker/default.ftl" in macro "restQueryData" at line 348, column 41]
+	- Reached through: @restQueryData restQuery=step.restQue...  [in template "freemarker/default.ftl" in macro "step_details" at line 418, column 37]
+	- Reached through: @step_details step=step step_number=s...  [in template "freemarker/default.ftl" in macro "write_step" at line 242, column 17]
+	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
+	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._TemplateModelException: [... Exception message was already printed; see it above ...]
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:311)
+	at freemarker.ext.beans._MethodUtil.newInvocationTemplateModelException(_MethodUtil.java:275)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:80)
+	at freemarker.core.MethodCall._eval(MethodCall.java:62)
+	at freemarker.core.Expression.eval(Expression.java:78)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:82)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:41)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:48)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Macro$Context.runMacro(Macro.java:184)
+	at freemarker.core.Environment.invoke(Environment.java:701)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:84)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:345)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlockInner(IteratorBlock.java:268)
+	at freemarker.core.IteratorBlock$IterationContext.executeNestedBlock(IteratorBlock.java:220)
+	at freemarker.core.IteratorBlock$IterationContext.accept(IteratorBlock.java:194)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:572)
+	at freemarker.core.IteratorBlock.acceptWithResult(IteratorBlock.java:78)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:64)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.MixedContent.accept(MixedContent.java:54)
+	at freemarker.core.Environment.visit(Environment.java:324)
+	at freemarker.core.Environment.process(Environment.java:302)
+	at net.thucydides.core.reports.templates.FreemarkerReportTemplate.merge(FreemarkerReportTemplate.java:42)
+	at net.thucydides.core.reports.html.Merger$MergeBuilder.to(Merger.java:37)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportPage(HtmlAcceptanceTestReporter.java:144)
+	at net.thucydides.core.reports.html.HtmlAcceptanceTestReporter.generateReportFor(HtmlAcceptanceTestReporter.java:130)
+	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:221)
+	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
+	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
+	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
+	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:71)
+	... 70 more
+40027 [pool-1-thread-2] ERROR net.thucydides.core.reports.templates.FreemarkerReportTemplate - Syntax error in report template: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@2e17de8b"; see cause exception in the Java stack trace.
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${formatter.renderText(restQuery.resp...  [in template "freemarker/default.ftl" in macro "restQueryData" at line 348, column 41]
+	- Reached through: @restQueryData restQuery=step.restQue...  [in template "freemarker/default.ftl" in macro "step_details" at line 418, column 37]
+	- Reached through: @step_details step=step step_number=s...  [in template "freemarker/default.ftl" in macro "write_step" at line 242, column 17]
+	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
+	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
+----
+	- Failed at: ${formatter.renderText(restQuery.resp...  [in template "freemarker/default.ftl" in macro "restQueryData" at line 348, column 41]
+	- Reached through: @restQueryData restQuery=step.restQue...  [in template "freemarker/default.ftl" in macro "step_details" at line 418, column 37]
+	- Reached through: @step_details step=step step_number=s...  [in template "freemarker/default.ftl" in macro "write_step" at line 242, column 17]
+	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
+	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
+
+]]></system-err>
+  </testcase>
+</testsuite>

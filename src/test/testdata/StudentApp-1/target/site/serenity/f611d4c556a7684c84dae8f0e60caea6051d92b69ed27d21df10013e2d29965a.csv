@@ -1,0 +1,8 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"First serenity test","File does not exist","COMPROMISED","2019-01-24T08:57:02.839+05:30","0.0","0.05"
+"First serenity test","Get all students","SUCCESS","2019-01-24T08:57:02.891+05:30","0.0","0.28"
+"First serenity test","This is a manual test","PENDING","2019-01-24T08:57:01.062+05:30","0.0","0.01"
+"First serenity test","This is a pending test","PENDING","2019-01-24T08:57:01.055+05:30","0.0","0.01"
+"First serenity test","This is a skipped test","IGNORED","2019-01-24T08:57:00.885+05:30","0.0","0.0"
+"First serenity test","This is atest with error","ERROR","2019-01-24T08:57:00.890+05:30","0.0","0.16"
+"First serenity test","This isa failing","FAILURE","2019-01-24T08:57:01.069+05:30","0.0","1.77"

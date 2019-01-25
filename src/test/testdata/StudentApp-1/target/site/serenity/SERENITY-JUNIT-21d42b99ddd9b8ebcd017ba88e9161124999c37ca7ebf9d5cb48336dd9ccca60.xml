@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="com.studentapp.junit.studentsinfo.StudentCrudTest" skipped="0" tests="4" time="3.48" timestamp="2019-01-24 08:57:03"><testcase classname="com.studentapp.junit.studentsinfo.StudentCrudTest" name="This test will create a new Student"><failure message="1 expectation failed.&#10;Expected header &quot;Transfer-Encoding&quot; was not &quot;chunkedyuyjff&quot;, was &quot;chunked&quot;. Headers are:&#10;Location=http://localhost:8080/student/101&#10;Content-Type=application/json;charset=UTF-8&#10;Transfer-Encoding=chunked&#10;Date=Thu, 24 Jan 2019 03:27:04 GMT&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected header "Transfer-Encoding" was not "chunkedyuyjff", was "chunked". Headers are:
+Location=http://localhost:8080/student/101
+Content-Type=application/json;charset=UTF-8
+Transfer-Encoding=chunked
+Date=Thu, 24 Jan 2019 03:27:04 GMT
+</failure><system-err>1 expectation failed.
+Expected header "Transfer-Encoding" was not "chunkedyuyjff", was "chunked". Headers are:
+Location=http://localhost:8080/student/101
+Content-Type=application/json;charset=UTF-8
+Transfer-Encoding=chunked
+Date=Thu, 24 Jan 2019 03:27:04 GMT
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:88)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.specification(ValidatableResponseOptionsImpl.java:311)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:292)&#13;
+com.studentapp.junit.studentsinfo.StudentCrudTest.test001(StudentCrudTest.java:58)&#13;
+</system-err></testcase><testcase classname="com.studentapp.junit.studentsinfo.StudentCrudTest" name="This test will verify newly added student"/><testcase classname="com.studentapp.junit.studentsinfo.StudentCrudTest" name="This test will update student information and Verify the info got updated"/><testcase classname="com.studentapp.junit.studentsinfo.StudentCrudTest" name="This test will delete the student and will also verify"/></testsuite>

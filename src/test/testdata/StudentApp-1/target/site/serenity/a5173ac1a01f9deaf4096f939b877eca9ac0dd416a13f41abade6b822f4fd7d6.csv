@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Student crud test","This test will create a new Student","FAILURE","2019-01-24T08:57:03.732+05:30","0.0","1.32"
+"Student crud test","This test will delete the student and will also verify","SUCCESS","2019-01-24T08:57:07.078+05:30","0.0","0.15"
+"Student crud test","This test will update student information and Verify the info got updated","SUCCESS","2019-01-24T08:57:06.576+05:30","0.0","0.5"
+"Student crud test","This test will verify newly added student","SUCCESS","2019-01-24T08:57:05.060+05:30","0.0","1.52"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.studentapp.junit.studentinfo.StudentCrudTest" time="6.8" tests="5" errors="1" skipped="0" failures="0">
+<testsuite name="com.studentapp.junit.studentinfo.StudentCrudTest" time="1.915" tests="5" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_171\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,11 +64,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="test001" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="3.925"/>
-  <testcase name="test002" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.776"/>
-  <testcase name="test003" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.252"/>
-  <testcase name="test004" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.174"/>
-  <testcase name="com.studentapp.junit.studentinfo.StudentCrudTest" classname="org.apache.maven.surefire.junit4.JUnit4Provider" time="1.673">
+  <testcase name="test001" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.415"/>
+  <testcase name="test002" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.814"/>
+  <testcase name="test003" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.226"/>
+  <testcase name="test004" classname="com.studentapp.junit.studentinfo.StudentCrudTest" time="0.14"/>
+  <testcase name="com.studentapp.junit.studentinfo.StudentCrudTest" classname="org.apache.maven.surefire.junit4.JUnit4Provider" time="0.32">
     <error message="Failed to generate configuration report" type="net.thucydides.core.reports.ReportGenerationFailedError">net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate configuration report
 	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
 	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
@@ -82,7 +82,7 @@
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
 	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
-Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@706ddbc8
+Caused by: net.thucydides.core.reports.ReportGenerationFailedError: Failed to generate reports using net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@13ae0ffd
 	at net.thucydides.core.reports.ReportService.generateReportFor(ReportService.java:223)
 	at net.thucydides.core.reports.ReportService.access$100(ReportService.java:35)
 	at net.thucydides.core.reports.ReportService$1.run(ReportService.java:157)
@@ -116,7 +116,7 @@ Caused by: net.thucydides.core.reports.templates.TemplateMergeException: Failed 
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: freemarker.core._TemplateModelException: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@3564b958"; see cause exception in the Java stack trace.
+Caused by: freemarker.core._TemplateModelException: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@139b16c1"; see cause exception in the Java stack trace.
 
 ----
 FTL stack trace ("~" means nesting-related):
@@ -201,8 +201,7 @@ FTL stack trace ("~" means nesting-related):
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.NullPointerException: null
 	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor202.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
@@ -278,7 +277,7 @@ Caused by: java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </error>
-    <system-err><![CDATA[5902 [main] INFO net.serenitybdd.core.Serenity - 
+    <system-err><![CDATA[21942 [main] INFO net.serenitybdd.core.Serenity - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -288,17 +287,18 @@ Caused by: java.lang.NullPointerException: null
 
 TEST PASSED: This test will delete the student and will also verify
 ----------------------------------------------------------------------------
-5980 [pool-1-thread-2] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will verify newly added student to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.jsonc4854996-aba8-44d2-82e3-5c583975e093)
-5980 [pool-1-thread-1] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will create a new student to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.json776504cb-067a-4cf8-9cf8-4ad5e3ce4c44)
-5980 [pool-1-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will update student information and Verify the info got updated to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.json3c199e49-c1f0-405c-bf41-060c5893de6c)
-5980 [pool-1-thread-4] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will delete the student and will also verify to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.json695f49fa-3d68-4eb8-aee7-ccb159d837bb)
-6954 [pool-1-thread-7] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test003 in 1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.html in directory target\site\serenity  
-7050 [pool-1-thread-8] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test004 in 6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.html in directory target\site\serenity  
-7235 [pool-1-thread-5] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test001 in 1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.html in directory target\site\serenity  
-Jan 24, 2019 6:05:05 PM freemarker.log._JULLoggerFactory$JULLogger error
+21944 [pool-1-thread-5] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will update student information and Verify the info got updated to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.jsonba9e6773-c8ff-4ffb-b26a-4c8e225efd9f)
+21944 [pool-1-thread-4] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will verify newly added student to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.json5a5955c7-fdbc-470c-ab4c-7d7ff6a04952)
+21945 [pool-1-thread-6] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will delete the student and will also verify to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.json977868a4-5533-4855-a053-71f1a743bef2)
+21948 [pool-1-thread-3] INFO net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for This test will create a new student to file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.json (using temp file D:\IntelliJJavaProject\StudentApp\target\site\serenity\1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.jsoneba931e9-a605-4cec-b9f7-7219b1d11b3a)
+21960 [pool-1-thread-2] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test004 in 6b74a9af807f1c90a7b8f10b50d034c3dc2244c9ad61f08501b3ae95ef970c8a.html in directory target\site\serenity  
+21961 [pool-1-thread-1] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test003 in 1ef1f830f1586c47fc90ed5f81799a7dbbb8ce412bcf1c62e28afd326de385fe.html in directory target\site\serenity  
+21961 [pool-1-thread-7] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test001 in 1fb60a383763db6bb78fc36fcabb24df451fd10a33e9d9e2bce2be81bc0aac8b.html in directory target\site\serenity  
+21964 [pool-1-thread-8] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test002 in 4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.html in directory target\site\serenity  
+Jan 25, 2019 1:09:57 PM freemarker.log._JULLoggerFactory$JULLogger error
 SEVERE: Error executing FreeMarker template
 FreeMarker template error:
-Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@3564b958"; see cause exception in the Java stack trace.
+Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@139b16c1"; see cause exception in the Java stack trace.
 
 ----
 FTL stack trace ("~" means nesting-related):
@@ -387,17 +387,16 @@ freemarker.core._TemplateModelException: [... Exception message was already prin
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.NullPointerException
 	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor202.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
 	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:71)
 	... 70 more
 
-7259 [pool-1-thread-8] WARN net.thucydides.core.reports.templates.FreemarkerReportTemplate - Report generation failed
+22018 [pool-1-thread-2] WARN net.thucydides.core.reports.templates.FreemarkerReportTemplate - Report generation failed
 FreeMarker template error:
-Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@3564b958"; see cause exception in the Java stack trace.
+Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@139b16c1"; see cause exception in the Java stack trace.
 
 ----
 FTL stack trace ("~" means nesting-related):
@@ -486,14 +485,13 @@ freemarker.core._TemplateModelException: [... Exception message was already prin
 	at java.lang.Thread.run(Thread.java:748)
 Caused by: java.lang.NullPointerException
 	at net.thucydides.core.reports.html.Formatter.renderText(Formatter.java:124)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.GeneratedMethodAccessor202.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at freemarker.ext.beans.BeansWrapper.invokeMethod(BeansWrapper.java:1458)
 	at freemarker.ext.beans.SimpleMethodModel.exec(SimpleMethodModel.java:71)
 	... 70 more
-7266 [pool-1-thread-8] ERROR net.thucydides.core.reports.templates.FreemarkerReportTemplate - Syntax error in report template: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@3564b958"; see cause exception in the Java stack trace.
+22024 [pool-1-thread-2] ERROR net.thucydides.core.reports.templates.FreemarkerReportTemplate - Syntax error in report template: Java method "net.thucydides.core.reports.html.Formatter.renderText(String)" threw an exception when invoked on net.thucydides.core.reports.html.Formatter object "net.thucydides.core.reports.html.Formatter@139b16c1"; see cause exception in the Java stack trace.
 
 ----
 FTL stack trace ("~" means nesting-related):
@@ -509,7 +507,6 @@ FTL stack trace ("~" means nesting-related):
 	- Reached through: @write_step step=nestedStep step_numb...  [in template "freemarker/default.ftl" in macro "write_step" at line 252, column 25]
 	- Reached through: @write_step step=step step_number=ste...  [in template "freemarker/default.ftl" at line 464, column 17]
 
-7386 [pool-1-thread-6] INFO net.thucydides.core.reports.html.HtmlAcceptanceTestReporter - GENERATING HTML REPORT FOR Student crud test:test002 in 4578a8b6f7265c26ad8d0d8389f34a67a4315d60c58dce87afbac71b929e4c23.html in directory target\site\serenity  
 ]]></system-err>
   </testcase>
 </testsuite>

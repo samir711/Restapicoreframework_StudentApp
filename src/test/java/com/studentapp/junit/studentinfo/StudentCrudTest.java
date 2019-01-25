@@ -3,6 +3,7 @@ package com.studentapp.junit.studentinfo;
 import com.studentapp.cucumber.serenity.StudentSerenitySteps;
 import com.studentapp.model.StudentClass;
 import com.studentapp.testbase.BaseTest;
+import com.studentapp.utils.ResuableSpecifications;
 import com.studentapp.utils.TestUtils;
 import io.restassured.http.ContentType;
 import net.serenitybdd.junit.runners.SerenityRunner;
@@ -49,7 +50,8 @@ public class StudentCrudTest extends BaseTest {
 
         ArrayList<String> courses = new ArrayList<String>();
         courses.add("Java");
-        steps.createStudent(firstName, lastName, email,programme,courses).log().all();
+        steps.createStudent(firstName, lastName, email,programme,courses).log().all()
+             .spec(ResuableSpecifications.getGenericResponseSpec());
     }
 
     @Title("This test will verify newly added student")
